@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEALER — Sale</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans">
+
+<!-- HEADER -->
+<header class="absolute top-0 left-0 w-full z-20">
+  <div class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between text-white">
+
+    <!-- MENU -->
+    <nav class="hidden md:flex gap-6 text-sm opacity-90">
+      <a href="#">Одежда</a>
+      <a href="#">Обувь</a>
+      <a href="#">Аксессуары</a>
+      <a href="#">Сумки</a>
+      <a href="#">Товары для спорта</a>
+    </nav>
+
+    <!-- LOGO -->
+    <div class="text-lg tracking-widest">DEALER</div>
+
+    <!-- ICONS (INLINE SVG) -->
+    <div class="flex items-center gap-5">
+
+      <!-- HEART -->
+      <svg class="w-5 h-5 cursor-pointer stroke-white hover:stroke-gray-300 transition"
+           fill="none" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+          d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5
+             -1.935 0-3.597 1.126-4.312 2.733
+             C11.285 4.876 9.623 3.75 7.688 3.75
+             5.099 3.75 3 5.765 3 8.25
+             c0 7.22 9 12 9 12s9-4.78 9-12z"/>
+      </svg>
+
+      <!-- BAG -->
+      <svg class="w-5 h-5 cursor-pointer stroke-white hover:stroke-gray-300 transition"
+           fill="none" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+          d="M6 7V6a6 6 0 0112 0v1
+             M3 7h18l-1.5 13.5
+             a2 2 0 01-2 1.5H6.5
+             a2 2 0 01-2-1.5L3 7z"/>
+      </svg>
+
+      <!-- SEARCH -->
+      <svg class="w-5 h-5 cursor-pointer stroke-white hover:stroke-gray-300 transition"
+           fill="none" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+          d="M21 21l-4.35-4.35
+             m1.35-5.15a7 7 0 11-14 0
+             7 7 0 0114 0z"/>
+      </svg>
+
+    </div>
+
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="relative h-screen flex items-center">
+
+  <!-- BACKGROUND IMAGE -->
+  <img
+    src="https://i.postimg.cc/m2J5pZDv/f06b6d1cae4a8ea1c7753e6518555af491f20a71.jpg"
+    class="absolute inset-0 w-full h-full object-cover"
+    alt="Hero Image"
+  >
+
+  <!-- OVERLAY -->
+  <div class="absolute inset-0 bg-black/25"></div>
+
+  <!-- CONTENT -->
+  <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+    <div class="max-w-2xl text-white">
+
+      <h1 class="text-5xl md:text-6xl font-bold leading-tight">
+        РАСПРОДАЖА <br>
+        ТОВАРОВ ДЛЯ НЕЕ
+      </h1>
+
+      <div class="flex items-center gap-4 mt-4">
+        <span class="bg-black px-4 py-1 rounded-full text-sm">
+          скидки до 90%
+        </span>
+        <div class="flex-1 border-b border-white/40"></div>
+      </div>
+
+      <button
+        class="mt-8 bg-white text-black px-6 py-3 rounded-md hover:bg-gray-200 transition">
+        Перейти в каталог
+      </button>
+
+    </div>
+  </div>
+
+  <!-- SLIDER INDICATOR -->
+  <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
+    <span class="w-8 h-[2px] bg-white"></span>
+    <span class="w-8 h-[2px] bg-white/40"></span>
+    <span class="w-8 h-[2px] bg-white/40"></span>
+    <span class="w-8 h-[2px] bg-white/40"></span>
+  </div>
+
+</section>
+
+</body>
+</html>
